@@ -1,138 +1,97 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿Quién quiere más al otrooo?</title>
+    <title>Adrián Arenas - Web Developer</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
-    <style>
-        body {
-            align-items: center;
-            background-image: url(https://media.istockphoto.com/id/1191251531/es/vector/patr%C3%B3n-sin-costuras-con-corazones-rojos-rom%C3%A1ntico-fondo-de-melocot%C3%B3n-cremoso-para-textil.jpg?s=612x612&w=0&k=20&c=b4Ddq7Vlc8iWhCXpoGPu6q1BtTPEtbAqe5iOSfM6Td8=);
-            background-position: center;
-            background-repeat: repeat;
-            background-size: 100px;
-            display: flex;
-            font-family: "Nerko One", cursive;
-            font-weight: 400;
-            font-style: normal;
-            height: 100vh;
-            padding: 40px 20px;
-            position: relative;
-        }
-        .container {
-            background-color: rgba(255, 255, 255, .8);
-            border-radius: 24px;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            justify-content: space-between;
-            max-height: 600px;
-            padding: 30px 20px;
-            position: relative;
-        }
-        h1 {
-            line-height: 1;
-            margin-bottom: 40px;
-            stroke: white;
-        }
-        h1 span {
-            font-size: 60px;        
-        }
-        button {
-            border: 0;
-            border-radius: 12px;
-            box-shadow: unset;
-            color: black;
-            font-size: 20px;
-            padding: 8px 24px;
-            position: absolute;
-            text-transform: uppercase;
-            top: 50%;
-            transform: translateY(-50%);
-            transition: background-color .3s ease-in-out;
-        }
-        button:focus {
-            outline: none;
-        }
-        .ines {
-            background-color: #FFF07C;
-            right: calc(50% + 20px);
-            z-index: 1;
-        }
-        .ines:hover {
-            background-color: #FFEA47;
-        }
-        .adri {
-            background-color: #B0B8D4;
-            left: calc(50% + 20px);
-        }
-        .adri:hover {
-            background-color: #7A88B8;
-        }
-        .resultado.hide {
-            display: none;
-        }
-        @media screen and (max-width: 767px) {
-            .container {
-                max-height: 100%;
-            }
-            h1 {
-                font-size: 30px;
-            }
-            h1 span {
-                font-size: 40px;
-            }
-        }
-    </style>
+    <link href="css/styles.css" rel="stylesheet">
 </head>
-
 <body>
-    <div class="container">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Adrian Arenas</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#banner">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <section id="banner" class="banner text-center">
+        <img src="images/dummy-image.jpg" alt="Banner Image" class="img-fluid">
+        <div class="banner-content">
+            <h1>Adrian Arenas</h1>
+            <p>Desarrollador Web</p>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="container my-5">
+        <h2 class="text-center">Proyectos</h2>
         <div class="row">
-            <div class="col-12 text-center position-static">
-                <h1>Resolvamos un dilema que se repite a menudo... <br><span>¿Quién quiere más al otrooo?</span></h1>
-                <button id="ines" class="ines">Inesita</button>
-                <button id="adri" class="adri">Adriansito</button>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/dummy-image.jpg" class="card-img-top" alt="Proyecto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 1</h5>
+                        <p class="card-text">Descripción breve del proyecto 1.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/dummy-image.jpg" class="card-img-top" alt="Proyecto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 2</h5>
+                        <p class="card-text">Descripción breve del proyecto 2.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/dummy-image.jpg" class="card-img-top" alt="Proyecto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 3</h5>
+                        <p class="card-text">Descripción breve del proyecto 3.</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row resultado hide">
-            <div class="col-12 text-center">
-                <h2>¡Genial! Sabía que dirías eso jeje <br>Te quierooo</h2>
-            </div> 
-        </div>
-    </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="container my-5">
+        <h2 class="text-center">Sobre mí</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut nisi sit amet lorem bibendum consectetur non nec eros. Fusce et tortor id turpis pharetra fermentum. Proin id felis sit amet est facilisis laoreet.</p>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="container my-5 text-center">
+        <h2>Contacto</h2>
+        <p>¿Te gustaría trabajar conmigo? ¡Contáctame!</p>
+        <a href="mailto:adrianarenasdev@gmail.com" class="btn btn-primary">Enviar Email</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Adrian Arenas. Todos los derechos reservados.</p>
+        <p>Sígueme en:
+            <a href="https://instagram.com/" class="text-white">Instagram</a> |
+            <a href="https://github.com/" class="text-white">GitHub</a>
+        </p>
+        <a href="#banner" class="btn btn-secondary">Volver al inicio</a>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        function randomIntFromInterval(min, max) { // min and max included 
-            return Math.floor(Math.random() * (max - min + 1) + min);
-        }
-        $( document ).ready(function() {
-            $("#adri").click(function() {
-                $(".adri").remove();
-                $(".ines").remove();
-                $(".resultado").removeClass("hide");
-            });
-            $("#ines").hover(function() {
-                containerh = $(".container").outerHeight();
-                containerw = $(".container").outerWidth();
-                buttonh = $(this).outerHeight();
-                buttonw = $(this).outerWidth();
-                randomx = randomIntFromInterval(20, containerw-20-buttonw);
-                randomy = randomIntFromInterval(30, containerh-30-buttonh);
-
-                $(this).css("top", randomy + "px");
-                $(this).css("right", randomx + "px");
-            });
-        });
-    </script>
 </body>
-
 </html>
